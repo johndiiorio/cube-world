@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cube World</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/gameStyle.css">
+	</head>
+	<style>
+		body {
+			margin: 0px;
+			background-color: #808080;
+			overflow: hidden;
+		}
+		#score {
+			font-size: 75px;
+			margin-top: 12px;
+			font-style: bold;
+			text-align: center;
+			color: #0000FF;
+		}
+		#container {
+			width: 600px;
+			height: 600px;
+			border: 3px solid white;
+			margin-left: auto;
+   		 	margin-right: auto;
+			margin-top: 12px;
+			cursor: none;
+		}
+		#bestScore {
+			font-size: 40px;
+			margin-top: 12px;
+			font-style: bold;
+			text-align: center;
+			color: #3366FF;
+		}
+		#introTitle {
+			font-size: 20px;
+			margin-top: 12px;
+			font-style: italic;
+			text-align: center;
+			margin-left: 30px;
+		}
+	</style>
+	<body>
+
+		<div id="introTitle">Welcome to Cube World! Collect the gem and avoid getting hit!</div>
+		<div id="score">0</div>
+		<div id="container"></div>
+		<div id="bestScore">Best: 0</div>
+
+		<!-- Code to display an information button and box when clicked. -->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+		<link rel=stylesheet href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+		<script src="js/info.js"></script>
+		<div id="infoButton"></div>
+		<div id="infoBox" title="Demo Information">	CubeWorld is a very simple game written in Javascript that uses the Three.js 3D library.</div>
+
+		<script type="text/javascript" src="js/three.min.js"></script>
+        <script type="text/javascript" src="js/gameScript.js"></script>
+
+	</body>
+</html>
